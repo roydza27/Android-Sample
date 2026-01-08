@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Default modern background -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#0A1F44"
+                android:centerColor="#12376E"
+                android:endColor="#1B4F9B"
+                android:angle="50"/>
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+
+</selector>
