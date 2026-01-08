@@ -39,80 +39,71 @@
         <LinearLayout
             android:id="@+id/loginContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="345dp"
+            android:background="#12FFFFFF"
             android:gravity="center"
-            android:padding="26dp"
-            android:background="#12FFFFFF">
+            android:orientation="vertical"
+            android:padding="26dp">
 
             <!-- Title -->
             <TextView
                 android:id="@+id/loginTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_in"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
                 android:alpha="0.88"
-                android:layout_marginBottom="20dp"/>
+                android:text="@string/sign_in"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
             <!-- Email Input -->
             <EditText
                 android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email_or_username"
-                android:padding="14dp"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/bg_glass"
                 android:layout_marginBottom="14dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/bg_glass"
+                android:hint="@string/email_or_username"
                 android:inputType="textEmailAddress"
-                android:autofillHints="emailAddress"/>
+                android:padding="14dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
             <!-- Password Input -->
+
+            <!-- Login Button -->
+
             <EditText
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
-                android:padding="14dp"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/bg_glass"
-                android:inputType="textPassword"
                 android:layout_marginBottom="22dp"
-                android:autofillHints="password"/>
+                android:autofillHints="password"
+                android:background="@drawable/bg_glass"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
-            <!-- Login Button -->
             <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="0dp"
+                android:layout_width="149dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="?android:attr/colorAccent"
+                android:padding="14dp"
                 android:text="@string/login"
+                android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:padding="14dp"
-                android:textColor="#fff"
-                android:backgroundTint="?android:attr/colorAccent"
-                app:layout_constraintWidth_percent="0.7"/>
+                app:layout_constraintWidth_percent="0.7" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <!-- Loader -->
-    <ProgressBar
-        android:id="@+id/loginLoader"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/loginCard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="28dp"/>
 
     <!-- Footer -->
     <TextView
